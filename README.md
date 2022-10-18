@@ -13,6 +13,17 @@
 # Instalasi
 [`^ kembali ke atas ^`](#)
 
+#### Kebutuhan Sistem :
+- **Sistem operasi Cloud VPS:** Unix, Linux atau Windows.
+- **Web Server:** Apache.
+- **Database:** MySQL.
+- **Bahasa Pemrograman Web:** PHP 7.0.
+- **Pengelolaan database:** phpMyAdmin.
+- **CMS:** Moodle versi 3.3.
+- **RAM minimal:** 64 Mb+.
+
+#### Proses Instalasi :
+
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
 
