@@ -94,6 +94,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
+
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 - batas upload file
 - batas memori
@@ -106,6 +107,7 @@ Plugin untuk fungsi tambahan
 
 # Maintenance
 [`^ kembali ke atas ^`](#)  
+
 Setting tambahan untuk maintenance secara periodik, misalnya:
 - buat backup database tiap pekan
 - hapus direktori sampah tiap hari
@@ -113,16 +115,19 @@ Setting tambahan untuk maintenance secara periodik, misalnya:
 
 # Otomatisasi
 [`^ kembali ke atas ^`](#)
+
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 # Cara Pemakaian
 [`^ kembali ke atas ^`](#)
+
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 # Pembahasan
 [`^ kembali ke atas ^`](#)
+
 - Pendapat anda tentang aplikasi web ini
     - kelebihan
     - kekurangan
