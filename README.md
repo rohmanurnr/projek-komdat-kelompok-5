@@ -20,10 +20,12 @@
 - **Bahasa Pemrograman Web:** PHP 7.3.
 
 #### Proses Instalasi :
-1. Login Kedalam Server 
+**1. Login Kedalam Server**
+
 Disini kami menggunakan VM Instance dari Google Cloud dan connect ke SSH melalui console yang telah disediakan.
 
-2. Install LAMPP
+**2. Install LAMPP**
+
 LAMPP adalah singkatan dari Linux, Apache, MySQL, PHP & phpMyAdmin. Untuk membangun sebuah website diperlukan sistem operasi server, web server, database dan bahasa pemrograman web (PHP).
 ```
 # update repository
@@ -38,7 +40,7 @@ sudo apt install php php-intl php-soap php-xmlrpc
 sudo apt install phpmyadmin
 ``` 
 
-3. Download file Moodle
+**3. Download file Moodle**
 ```
 # pindah ke folder /var/www/html
 cd /var/www/html
@@ -48,7 +50,7 @@ sudo apt install git
 sudo git clone git://git.moodle.org/moodle.git
 ```
 
-4. Buat data direktori untuk Moodle
+**4. Buat data direktori untuk Moodle**
 ```
 sudo mkdir /var/www/html/moodledata
 
@@ -58,7 +60,7 @@ sudo chmod -R 755 /var/www/html/moodle/
 sudo chown www-data /var/www/html/moodledata
 ```
 
-5. Sinkronisasi Domain dengan Konfigurasi Apache
+**5. Sinkronisasi Domain dengan Konfigurasi Apache**
 ```
 # membuat konfigurasi baru
 sudo touch /etc/apache2/sites-available/moodle.conf
@@ -72,10 +74,10 @@ Masukan kode berikut pada file konfigurasi
 ```
 <VirtualHost *:80>
 
-DocumentRoot /var/www/html/moodle/ 
+DocumentRoot /var/www/html/moodle/
 
-ServerName kelasonline.websitesaya.net
-ServerAlias www.kelasonline.websitesaya.net
+ServerName your-domain.com
+ServerAlias www.your-domain.com
  
 <Directory /var/www/html/moodle/>
  
@@ -91,26 +93,101 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
  
 </VirtualHost>
 ```
+restart kembali apache
+```
+sudo systemctl restart apache2
+```
+
+**6. Membuat Database Moodle**
+
+Akses phpMyAdmin dengan menulis ip_address/phpmyadmin pada web browser dan login menggunakan akun root. Kemudian klik tab menu database . Pada bagian `Create database`, silahkan buat database dengan nama yang diinginkan.
+![image](https://user-images.githubusercontent.com/81523117/196926716-ac2f978c-a580-4c28-91f2-9bc75c3fcdc2.png)
+![image](https://user-images.githubusercontent.com/81523117/196927476-fb56d28b-acad-4d58-a2ba-4f3e187e4c7d.png)
+
+
+**7. Melakukan Instalasi Moodle**
+
+Untuk melakukan instalasi Moodle, silahkan akses domain atau ip_addres di web browser. 
+- Pilih bahasa yang akan digunakan
+![image](https://user-images.githubusercontent.com/81523117/196928465-62741332-b648-43a1-95b9-515b4749a9e9.png)
+
+- Sesuaikan web addres, direktori Moodle, dan direktori data Moodle
+![image](https://user-images.githubusercontent.com/81523117/196928644-c5cd35e0-0cd9-41f2-8108-61d21dae28c4.png)
+
+- Pilih tipe database yang digunakan, silahkan pilih `Improved MySQL`
+![image](https://user-images.githubusercontent.com/81523117/196928772-a200f996-1659-41dd-a995-d8b278da98d8.png)
+
+- Sesuaikan konfigurasi database
+![image](https://user-images.githubusercontent.com/81523117/196929808-1a2fa626-c8d0-4a3b-aacd-101bd2d58aec.png)
+
+- Persetujuan lisensi Moodle
+![image](https://user-images.githubusercontent.com/81523117/196934746-160c51c7-a4fa-495b-bc0f-422480763587.png)
+
+- Pengecekan persyaratan & Instalasi Moodle
+
+Pastikan pada bagian plugin status sudah OK semua ya. Jika belum berstatus OK, maka dapat dipastikan proses instalasi gagal. Jika sudah OK, klik 'continue'
+![image](https://user-images.githubusercontent.com/81523117/196935147-2923af04-c6c7-47da-a817-424cead275f1.png)
+
+Tunggu hingga proses instalasi selesai dan klik 'continue'
+![image](https://user-images.githubusercontent.com/81523117/196936068-d7191d3e-43be-4c8e-92bc-2eb784a63b8b.png)
+
+8. Mengatur Username dan Password Admin
+![image](https://user-images.githubusercontent.com/81523117/196936376-aec7c362-4f1d-41d1-8859-cb51b94cd143.png)
+
+9. Mengatur tampilan kelas online
+![image](https://user-images.githubusercontent.com/81523117/196937017-bb0bc103-3780-4c32-823a-cf3f25041ca3.png)
+
+10. Akses website pada web browser
+
+Untuk mengakses dapat menggunakan alamat ip atau domain yang digunakan untuk hosting Moodle. Akan muncul tampilan berikut yang merupakan halaman dashboard dari administrator.
+![image](https://user-images.githubusercontent.com/81523117/196937319-797ec6b9-cd4e-455e-b63d-b268ce109b6d.png)
+
 
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
 
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
+Untuk konfigurasi aplikasi Moodle dapat dilakukan melalui bagian `site administration`
+disitu kita dapat melakukan setting tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 - batas upload file
+![image](https://user-images.githubusercontent.com/81523117/196945644-83ee4cf6-1896-48d0-b89c-2edc48ab673d.png)
+
 - batas memori
+![image](https://user-images.githubusercontent.com/81523117/196945731-b6545b00-1fdc-4ae2-8db7-a424d2df0e25.png)
+
+- install plugin
+![image](https://user-images.githubusercontent.com/81523117/196945811-f51a44b3-9488-4327-99dc-e80ed40cdf50.png)
+
+- atur tema
+![image](https://user-images.githubusercontent.com/81523117/196945846-34cee2f4-8d4a-4e37-ab7a-d5dc3b8e98f6.png)
+
 - dll
 
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
+![image](https://user-images.githubusercontent.com/81523117/196942113-d9a26569-9c1d-4f0e-8351-1c3487742e6c.png)
+
+untuk mempermudah mencari konfigurasi, kita dapat memanfaatkan tombol search yang telah disediakan
+
 
 # Maintenance
 [`^ kembali ke atas ^`](#)  
 
-Setting tambahan untuk maintenance secara periodik, misalnya:
+Ketika kita ingin memodifikasi aplikasi yang sudah terinstall, kita mungkin tidak ingin ada orang lain yang membuka aplikasi kita. Pada saat seperti itu, kita dapat mengkonfigurasi aplikasi kita untuk masuk ke dalam *maintenance mode*. Berikut ini adalah langkah-langkah yang harus kita lakukan :
+1. Login ke dalam akun admin
+2. Masuk ke submenu `Site administration` -> `server`
+3. Pilih `maintenance mode` pada bagian maintenance
+![image](https://user-images.githubusercontent.com/81523117/196943862-5a400edf-524f-40e2-b280-5c385f59161a.png)
+5. Enable `maintenance mode` dan isi pesan yang ingin ditampilkan apabila ada yang mengakses aplikasi saat sedang maintenance. Lalu simpan perubahan 
+![image](https://user-images.githubusercontent.com/81523117/196944027-79ff3775-45a8-4d3c-87e5-aaf26453b418.png)
+
+
+Selanjutnya kita dapat melakukan setting tambahan untuk maintenance aplikasi secara periodik, misalnya:
 - buat backup database tiap pekan
+![image](https://user-images.githubusercontent.com/81523117/196945272-e1c890cd-504b-40b9-8cd0-21dec0cec1a3.png)
+![image](https://user-images.githubusercontent.com/81523117/196945212-9fed073e-cc31-4d89-aaa6-eaaba1d4f2da.png)
+
 - hapus direktori sampah tiap hari
+![image](https://user-images.githubusercontent.com/81523117/196945339-872171ba-02da-48e6-9c93-3e91d738b3f3.png)
+![image](https://user-images.githubusercontent.com/81523117/196945367-e1497fa0-4ff7-4443-9859-b675d7b68747.png)
+
 - dll
 
 # Otomatisasi
