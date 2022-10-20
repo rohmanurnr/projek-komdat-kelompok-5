@@ -117,32 +117,24 @@ Setting tambahan untuk maintenance secara periodik, misalnya:
 [`^ kembali ke atas ^`](#)
 
 Jika kalian masih merasa kesulitan dalam meng-install **Moodle**, terdapat cara alternatif yang lebih mudah dengan menggunakan layanan yang tersedia pada web-hosting provider. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install **Moodle**. Berikut langkah-langkah untuk melakukannya installasi menggunakan web-hosting provider.
-1. Kita perlu mengunjungi web-hosting provider yang menyediakan script instalasi **moodle** otomatis, seperti [softaculous.](http://www.softaculous.com/apps/educational/Moodle) melalui _web-hosting _[infinityfree.](http://infinityfree.net/accounts)
+1. Kita perlu mengunjungi web-hosting provider yang menyediakan script instalasi **moodle** otomatis, seperti [softaculous.](http://www.softaculous.com/apps/educational/Moodle) melalui _web-hosting_ [infinityfree.](http://infinityfree.net/accounts)
 2. Kunjungi link tersebut lalu buat akun _web-hosting_
 ![Screenshot (501)](https://user-images.githubusercontent.com/88269626/196848936-62a062a4-fc1a-490f-a07c-3d8922ee8beb.png)
 
-3. Klik _web-hosting _yang telah dibuat
+3. Klik _web-hosting_ yang telah dibuat
 ![Screenshot (502)](https://user-images.githubusercontent.com/88269626/196849119-9b9835f2-3a4d-4126-977d-faa8c83d5e3e.png)
 
 4. Kemudian masuk ke bagian control panel dan pilih softaculous
-![Screenshot (503)](https://user-images.githubusercontent.com/88269626/196849136-eccb87e1-dda1-403e-bf54-34260a03981b.png)
-
-![Screenshot (504)](https://user-images.githubusercontent.com/88269626/196849142-dcb87dbe-92d9-48d9-bed2-41870da9b532.png)
+![Screenshot (503)](https://user-images.githubusercontent.com/88269626/196849136-eccb87e1-dda1-403e-bf54-34260a03981b.png) ![Screenshot (504)](https://user-images.githubusercontent.com/88269626/196849142-dcb87dbe-92d9-48d9-bed2-41870da9b532.png)
 
 5. Selanjutnya cari software moodle dan install
 ![Screenshot (506)](https://user-images.githubusercontent.com/88269626/196849209-14977e45-def5-41af-98b2-88d85dcc5f51.png)
 
 6. Lalu pilih versi moodle dan masukkan data admin
-![Screenshot (507)](https://user-images.githubusercontent.com/88269626/196849229-a59b2c15-be78-4fa8-adb0-053fb91eecb1.png)
-
-![Screenshot (521)](https://user-images.githubusercontent.com/88269626/196849448-29ecb241-9465-4e2e-9eb3-37c493af973f.png)
+![Screenshot (507)](https://user-images.githubusercontent.com/88269626/196849229-a59b2c15-be78-4fa8-adb0-053fb91eecb1.png) ![Screenshot (521)](https://user-images.githubusercontent.com/88269626/196849448-29ecb241-9465-4e2e-9eb3-37c493af973f.png)
 
 7. Klik install hingga selesai
-![Screenshot (509)](https://user-images.githubusercontent.com/88269626/196849269-ffbf80a6-8986-4625-b540-0bec2b863e8c.png)
-
-![Screenshot (522)](https://user-images.githubusercontent.com/88269626/196849506-bda89b89-c274-4e27-81bd-cbee4d4826cd.png)
-
-![Screenshot (510)](https://user-images.githubusercontent.com/88269626/196849323-0578c12a-b232-4f95-a4a8-a3eea703b8b0.png)
+![Screenshot (509)](https://user-images.githubusercontent.com/88269626/196849269-ffbf80a6-8986-4625-b540-0bec2b863e8c.png) ![Screenshot (522)](https://user-images.githubusercontent.com/88269626/196849506-bda89b89-c274-4e27-81bd-cbee4d4826cd.png) ![Screenshot (510)](https://user-images.githubusercontent.com/88269626/196849323-0578c12a-b232-4f95-a4a8-a3eea703b8b0.png)
 
 8. Setelah terinstall silahkan klik link yang telah dibuat
 ![Screenshot (511)](https://user-images.githubusercontent.com/88269626/196849358-fca5fb6d-56c9-48c5-92ff-bfdd955b2e9a.png)
@@ -157,18 +149,13 @@ Jika kalian masih merasa kesulitan dalam meng-install **Moodle**, terdapat cara 
 ![Screenshot (526)](https://user-images.githubusercontent.com/88269626/196849688-5a932360-d9fc-409e-a5a6-b1cec692170c.png)
 
 12. Kemudian buat folder baru datanyamoodle dan atur CHMOD dengan write semua
-
-![Screenshot (528)](https://user-images.githubusercontent.com/88269626/196849744-c4061b27-0f7f-45d7-9eb8-ce97cfb38747.png)
-
-![Screenshot (529)](https://user-images.githubusercontent.com/88269626/196849745-e7ec6fc1-cc07-47a4-97be-402d5567755a.png)
+![Screenshot (528)](https://user-images.githubusercontent.com/88269626/196849744-c4061b27-0f7f-45d7-9eb8-ce97cfb38747.png) ![Screenshot (529)](https://user-images.githubusercontent.com/88269626/196849745-e7ec6fc1-cc07-47a4-97be-402d5567755a.png)
 
 13. Selanjutnya buka file config.php kemudian edit
 ![Screenshot (530)](https://user-images.githubusercontent.com/88269626/196849764-16e9c9c8-0e66-469f-9220-b95586e99b47.png)
 
 14. Ubah data root yang mengarahkan ke folder datanyamoodle yang telah dibuat
-![Screenshot (531)](https://user-images.githubusercontent.com/88269626/196849786-171eb1c5-30e2-40d0-a80d-560dfd5b8a44.png)
-
-![Screenshot (532)](https://user-images.githubusercontent.com/88269626/196849798-f3a97297-9271-48c1-8350-655ddb4871db.png)
+![Screenshot (531)](https://user-images.githubusercontent.com/88269626/196849786-171eb1c5-30e2-40d0-a80d-560dfd5b8a44.png) ![Screenshot (532)](https://user-images.githubusercontent.com/88269626/196849798-f3a97297-9271-48c1-8350-655ddb4871db.png)
 
 15. Silahkan buka kembali link moodle yang telah dibuat
 ![Screenshot (533)](https://user-images.githubusercontent.com/88269626/196849806-8f23d6e5-2d7d-44f5-b650-222d839da30b.png)
@@ -206,14 +193,12 @@ Jika kalian masih merasa kesulitan dalam meng-install **Moodle**, terdapat cara 
 
 # Pembahasan
 [`^ kembali ke atas ^`](#)
-
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+Moodle memberikan pengalaman bagi penggunanya untuk dapat merasakan pembelajaran jarak jauh melalui _online_. Moodle memiliki berbagai fitur yang dapat digunakan untuk mengakses ilmu pengetahuan, manajemen pembelajaran baik _knowledge material_, kuis, dan sebagainya. Sebagai admin dapat mendapatkan dampak dengan mudah menambahkan material yang akan dibagikan. Namun terdapat kekurangan berupa banyaknya data yang ingin dimasukkann namun tampilan muka perlu ditingkatkan untuk efisiensi pengguna. Apabila dibandingkan dengan Google Classroom sebagai aplikasi yang sejenis untuk pendidikan, tampilan muka yang lebih menarik dan efisien dalam menambahkan bahan ajar atau sejenisnya.
 
 # Referensi
 [`^ kembali ke atas ^`](#)
 
 1. [About Moodle](https://en.wikipedia.org/wiki/Moodle) - Moodle
 2. [Profile Moodle](https://moodle.com/about/) - Profile Moodle
+3. [Install Moodle Otomatis](https://www.youtube.com/watch?v=gHNVFl37fRc&list=PL6-8zFijO6H-FkL_xWCFq3K7ueLoWEU82&index=4&ab_channel=BangSuprem) - Tutorial
+4. [Dampak Menggunakan Moodle][https://www.indonesiana.id/read/150625/moodle-sebagai-media-interaktif-dalam-konteks-merdeka-belajar] - Dampak
